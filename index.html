@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Blackjack</title>
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <link rel="stylesheet" href="assets/css/styles.css" />
+    </head>
+    <body>
+        <header class="title">Blackjack</header>
+
+        <div class="row container mt-4">
+            <div id="divButtons" class="col text-center">
+                <button id="btnNew" class="btn btn-danger ml-2 mr-2">
+                    New Game
+                </button>
+                <button
+                    id="btnHit"
+                    disabled="disabled"
+                    class="btn btn-primary ml-2 mr-2"
+                >
+                    Hit
+                </button>
+                <button
+                    id="btnStand"
+                    disabled="disabled"
+                    class="btn btn-info ml-2 mr-2"
+                >
+                    Stand
+                </button>
+            </div>
+        </div>
+        <div class="row container mt-4 ml-4">
+            <div class="col">
+                <h2>Player - <small>0</small></h2>
+                <div id="player-cards" class="divCards"></div>
+            </div>
+        </div>
+        <div class="row container mt-4 ml-4">
+            <div class="col">
+                <h2>Computer - <small>0</small></h2>
+                <div id="computer-cards" class="divCards"></div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+        <script src="https://cdn.jsdelivr.net/npm/underscore@1.12.0/underscore-min.js"></script>
+        <script src="assets/js/game.min.js"></script>
+        <script>
+            myModule.newGame();
+        </script>
+    </body>
+</html>
